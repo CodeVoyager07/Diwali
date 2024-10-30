@@ -127,7 +127,7 @@ function celebrateDiwali() {
 
     setTimeout(() => {
       document.body.removeChild(message);
-    }, 9000); // Remove message after 4 seconds
+    }, 9000); // Remove message after 9 seconds
   }
 }
 
