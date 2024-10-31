@@ -8,6 +8,7 @@
 html, body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #212121;
@@ -18,6 +19,7 @@ html, body {
 .container {
   position: relative;
   z-index: 5; /* Ensure container is above background effects */
+  text-align: center;
 }
 
 /* Set mandala as background image */
@@ -123,4 +125,39 @@ button:hover {
   height: 100vh;
   pointer-events: none; /* Prevent interaction */
   z-index: 1; /* Ensure it is above the background but below the container */
+}
+
+/* Footer Styling */
+footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0);
+  padding: 10px;
+  z-index: 10;
+}
+/* Happy Diwali Heading Styling */
+h1 {
+	font-family: "Honk", system-ui;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
+	font-variation-settings: "MORF" 25, "SHLN" 0;
+	font-palette: --color;
+	font-size: calc(3.5vw + 0.8rem);
+	letter-spacing: 0.2ch;
+	animation: morph 5s ease alternate infinite;
+}
+
+/* Morphing Animation */
+@keyframes morph {
+	0% {
+		font-variation-settings: "MORF" 25, "SHLN" 0;
+	}
+	100% {
+		font-variation-settings: "MORF" 45, "SHLN" 100;
+	}
 }
